@@ -14,16 +14,22 @@ class Tool{
 
 class Tool: public Rock{
 	public:
-		Tool(char r);
+		Rock(int r){
+			strength = r;
+		}
 }
 
 class Tool: public Paper{
 	public:
-		Tool(char p);
+		Paper(int p){
+			strength = p;
+		}
 
 }
 
-class Tool: public Rock{
+class Tool: public Scissors{
 	public:
-		Tool(char r);
+		Scissors(int s){
+			strength = s;
+		}
 }
