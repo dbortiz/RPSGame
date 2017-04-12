@@ -11,3 +11,19 @@ class Tool{
 		~Tool();
 		void setStrength(int);
 };
+
+class Tool: public Rock{
+	public:
+		Tool(char r);
+}
+
+class Tool: public Paper{
+	public:
+		Tool(char p);
+
+}
+
+class Tool: public Rock{
+	public:
+		Tool(char r);
+}
