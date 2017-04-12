@@ -12,24 +12,26 @@ class Tool{
 		void setStrength(int);
 };
 
-class Tool: public Rock{
+class Rock: public Tool{
 	public:
 		Rock(int r){
 			strength = r;
 		}
-}
+		bool fight(Tool);
+};
 
-class Tool: public Paper{
+class Paper: public Tool{
 	public:
 		Paper(int p){
 			strength = p;
 		}
+		bool fight(Tool);
+};
 
-}
-
-class Tool: public Scissors{
+class Scissors: public Tool{
 	public:
 		Scissors(int s){
 			strength = s;
 		}
-}
+		bool fight(Tool);
+};
