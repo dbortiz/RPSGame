@@ -3,10 +3,9 @@
 using namespace std;
 
 class Tool{
-	private:
+	public:
 		int strength;
 		char type;
-	public:
 		Tool();
 		~Tool();
 		void setStrength(int);
@@ -15,7 +14,7 @@ class Tool{
 class Rock: public Tool{
 	public:
 		Rock(int r){
-			strength = r;
+			setStrength(r);
 		}
 		bool fight(Tool);
 };
@@ -23,7 +22,7 @@ class Rock: public Tool{
 class Paper: public Tool{
 	public:
 		Paper(int p){
-			strength = p;
+			setStrength(p);
 		}
 		bool fight(Tool);
 };
@@ -31,7 +30,7 @@ class Paper: public Tool{
 class Scissors: public Tool{
 	public:
 		Scissors(int s){
-			strength = s;
+			setStrength(s);
 		}
 		bool fight(Tool);
 };
