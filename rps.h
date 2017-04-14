@@ -13,24 +13,18 @@ class Tool{
 
 class Rock: public Tool{
 	public:
-		Rock(int r){
-			setStrength(r);
-		}
+		Rock(int);
 		bool fight(Tool);
 };
 
 class Paper: public Tool{
 	public:
-		Paper(int p){
-			setStrength(p);
-		}
+		Paper(int);
 		bool fight(Tool);
 };
 
 class Scissors: public Tool{
 	public:
-		Scissors(int s){
-			setStrength(s);
-		}
+		Scissors(int);
 		bool fight(Tool);
 };
