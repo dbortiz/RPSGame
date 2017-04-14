@@ -23,6 +23,31 @@ Scissors::Scissors(int s){
 	strength = s;
 }
 
+bool Rock::fight(Tool r){
+	if (r.strength == strength){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+bool Paper::fight(Tool p){
+	if (p.strength == strength){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+bool Scissors::fight(Tool s){
+	if(s.strength == strength){
+		return true;
+	}else{
+		return false;
+	}
+
+}
+
 void Tool::setStrength(int s){
 	strength = s;
 }
