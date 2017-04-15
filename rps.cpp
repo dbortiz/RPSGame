@@ -53,14 +53,14 @@ bool Rock::fight(Tool opponent){
 		strength;
 	}
 
-	if (strength > p.strength){
+	if (strength > opponent.strength){
 		return true;
 	}else{
 		return false;
 	}
 }
 
-bool Paper::fight(Tool p){
+bool Paper::fight(Tool opponent){
 	if (opponent.type == 'r'){
 		strength *= 2;
 	}
@@ -71,14 +71,14 @@ bool Paper::fight(Tool p){
 		strength;
 	}
 
-	if (strength > p.strength){
+	if (strength > opponent.strength){
 		return true;
 	}else{
 		return false;
 	}
 }
 
-bool Scissors::fight(Tool s){
+bool Scissors::fight(Tool opponent){
 	if (opponent.type == 's'){
 		strength *= 2;
 	}
@@ -89,7 +89,7 @@ bool Scissors::fight(Tool s){
 		strength;
 	}
 
-	if(strength > s.strength){
+	if(strength > opponent.strength){
 		return true;
 	}else{
 		return false;
