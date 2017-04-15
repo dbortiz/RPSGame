@@ -8,14 +8,14 @@ int main(){
 	Rock r(3);
 	Paper p(4);
 	Scissors s(5);
-
+	/*
 	cout << r.strength << endl;
 	cout << r.type << endl;
 	cout << p.strength << endl;
 	cout << p.type << endl;
 	cout << s.strength << endl;
 	cout << s.type << endl;
-
+	*/
 	if (r.fight(s) == true){
 		cout << "Rock wins!" << endl;
 	}else{

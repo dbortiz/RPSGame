@@ -6,11 +6,11 @@ Tool::Tool(){
 	int strength = 1;
 	char type = 's';
 }
-
+/*
 Tool::~Tool(){
 	cout << "Someone lost." << endl;
 }
-
+*/
 Rock::Rock(){
 	strength = 1;
 	type = 'r';

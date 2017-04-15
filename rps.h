@@ -7,7 +7,7 @@ class Tool{
 		int strength;
 		char type;
 		Tool();
-		~Tool();
+		//~Tool();
 		void setStrength(int);
 };
 
