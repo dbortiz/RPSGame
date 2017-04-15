@@ -11,6 +11,21 @@ Tool::~Tool(){
 	cout << "Someone lost." << endl;
 }
 
+Rock::Rock(){
+	strength = 1;
+	type = 'r';
+}
+
+Paper::Paper(){
+	strength = 1;
+	type = 'p';
+}
+
+Scissors::Scissors(){
+	strength = 1;
+	type = 'p';
+}
+
 Rock::Rock(int r){
 	setStrength(r);
 }
