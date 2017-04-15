@@ -1,3 +1,8 @@
+// Dan Ortiz
+// CPSC 121-01
+// This program determines the winner in a Rock, Paper, Scissors game... with a "twist".
+// The programmer inputs a strength level into the object's constructor and the program
+// chooses the winner based on the strength level between two objects (ex. Rock v. Paper).
 #include <iostream>
 #include "rps.h"
 
