@@ -39,4 +39,6 @@ class Scissors: public Tool{
 		bool fight(Tool);
 };
 
+// Prototype to check the winner
+void checkWinner(bool, Tool, Tool);
 #endif
