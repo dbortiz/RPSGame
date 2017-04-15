@@ -16,5 +16,13 @@ int main(){
 	cout << s.strength << endl;
 	cout << s.type << endl;
 
+	r.fight(s);
+	r.fight(p);
+
+	p.fight(r);
+	p.fight(s);
+
+	s.fight(r);
+	s.fight(p);
 	return 0;
 }
