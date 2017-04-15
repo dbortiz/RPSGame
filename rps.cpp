@@ -26,16 +26,20 @@ Scissors::Scissors(){
 	type = 'p';
 }
 
+
 Rock::Rock(int r){
 	setStrength(r);
+	type = 'r';
 }
 
 Paper::Paper(int p){
 	setStrength(p);
+	type = 'p';
 }
 
 Scissors::Scissors(int s){
 	setStrength(s);
+	type = 's';
 }
 
 bool Rock::fight(Tool r){
