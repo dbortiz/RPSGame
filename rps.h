@@ -2,15 +2,16 @@
 
 using namespace std;
 
+// Tool class with variables, constructor, and setStrength method
 class Tool{
 	public:
 		int strength;
 		char type;
 		Tool();
-		//~Tool();
 		void setStrength(int);
 };
 
+// Rock class with constructors and fight method
 class Rock: public Tool{
 	public:
 		Rock();
@@ -18,6 +19,7 @@ class Rock: public Tool{
 		bool fight(Tool);
 };
 
+// Paper class with constructors and fight method
 class Paper: public Tool{
 	public:
 		Paper();
@@ -25,6 +27,7 @@ class Paper: public Tool{
 		bool fight(Tool);
 };
 
+// Scissors class with constructors and fight method
 class Scissors: public Tool{
 	public:
 		Scissors();
