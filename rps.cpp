@@ -46,7 +46,7 @@ bool Rock::fight(Tool opponent){
 	if (opponent.type == 's'){
 		strength *= 2;
 	}
-	if else(opponent.type == 'p'){
+	else if (opponent.type == 'p'){
 		strength *= 0.5;
 	}
 	else{
@@ -64,7 +64,7 @@ bool Paper::fight(Tool p){
 	if (opponent.type == 'r'){
 		strength *= 2;
 	}
-	if else(opponent.type == 's'){
+	else if (opponent.type == 's'){
 		strength *= 0.5;
 	}
 	else{
@@ -82,7 +82,7 @@ bool Scissors::fight(Tool s){
 	if (opponent.type == 's'){
 		strength *= 2;
 	}
-	if else(opponent.type == 'r'){
+	else if (opponent.type == 'r'){
 		strength *= 0.5;
 	}
 	else{
