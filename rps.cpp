@@ -12,15 +12,15 @@ Tool::~Tool(){
 }
 
 Rock::Rock(int r){
-	strength = r;
+	setStrength(r);
 }
 
 Paper::Paper(int p){
-	strength = p;
+	setStrength(p);
 }
 
 Scissors::Scissors(int s){
-	strength = s;
+	setStrength(s);
 }
 
 bool Rock::fight(Tool r){
@@ -45,7 +45,7 @@ bool Scissors::fight(Tool s){
 	}else{
 		return false;
 	}
-
+	
 }
 
 void Tool::setStrength(int s){
