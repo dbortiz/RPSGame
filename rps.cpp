@@ -42,7 +42,17 @@ Scissors::Scissors(int s){
 	type = 's';
 }
 
-bool Rock::fight(Tool r){
+bool Rock::fight(Tool opponent){
+	if (opponent.type == 's'){
+		strength *= 2;
+	}
+	if else(opponent.type == 'p'){
+		strength *= 0.5;
+	}
+	else{
+		strength;
+	}
+
 	if (r.strength == strength){
 		return true;
 	}else{
@@ -51,6 +61,16 @@ bool Rock::fight(Tool r){
 }
 
 bool Paper::fight(Tool p){
+	if (opponent.type == 'r'){
+		strength *= 2;
+	}
+	if else(opponent.type == 's'){
+		strength *= 0.5;
+	}
+	else{
+		strength;
+	}
+
 	if (p.strength == strength){
 		return true;
 	}else{
@@ -59,6 +79,16 @@ bool Paper::fight(Tool p){
 }
 
 bool Scissors::fight(Tool s){
+	if (opponent.type == 's'){
+		strength *= 2;
+	}
+	if else(opponent.type == 'r'){
+		strength *= 0.5;
+	}
+	else{
+		strength;
+	}
+
 	if(s.strength == strength){
 		return true;
 	}else{
