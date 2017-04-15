@@ -1,3 +1,7 @@
+// This header file declares and initializes the classes: Tool, Rock, Paper, and Scissors.
+#ifndef RPS_H
+#define RPS_H
+
 #include <iostream>
 
 using namespace std;
@@ -34,3 +38,5 @@ class Scissors: public Tool{
 		Scissors(int);
 		bool fight(Tool);
 };
+
+#endif

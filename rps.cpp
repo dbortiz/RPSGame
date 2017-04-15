@@ -1,3 +1,4 @@
+//This program initializes the classes' constructors and methods.
 #include "rps.h"
 
 using namespace std;
