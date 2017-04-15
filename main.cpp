@@ -16,13 +16,37 @@ int main(){
 	cout << s.strength << endl;
 	cout << s.type << endl;
 
-	r.fight(s);
-	r.fight(p);
+	if (r.fight(s) == true){
+		cout << "Rock wins!" << endl;
+	}else{
+		cout << "Scissors wins!" << endl;
+	}
+	if (r.fight(p) == true) {
+		cout << "Rock wins!" << endl;
+	}else{
+		cout << "Paper wins!" << endl;
+	}
 
-	p.fight(r);
-	p.fight(s);
+	if (p.fight(r) == true){
+		cout << "Paper wins!" << endl;
+	}else{
+		cout << "Rock wins!" << endl;
+	}
+	if (p.fight(s) == true) {
+		cout << "Paper wins!" << endl;
+	}else{
+		cout << "Scissors wins!" << endl;
+	}
 
-	s.fight(r);
-	s.fight(p);
+	if (s.fight(r) == true){
+		cout << "Paper wins!" << endl;
+	}else{
+		cout << "Rock wins!" << endl;
+	}
+	if (s.fight(p) == true){
+		cout << "Scissors wins!" << endl;
+	}else{
+		cout << "Paper wins!" << endl;
+	}
 	return 0;
 }
