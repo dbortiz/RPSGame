@@ -106,3 +106,36 @@ bool Scissors::fight(Tool opponent){
 void Tool::setStrength(int s){
 	strength = s;
 }
+
+// Function to check who won between two objects (Rock, Paper, or Scissors)
+void checkWinner(bool win, Tool a, Tool b){
+	if (win == true){
+		switch (a.type){
+			case 'r' :
+				cout << "Rock wins!" << endl;
+				break;
+			case 'p' :
+				cout << "Paper wins!" << endl;
+				break;
+			case 's' :
+				cout << "Scissors wins!" << endl;
+				break;
+			default :
+				cout << "Something went wrong" << endl;
+		}
+	}else{
+		switch (b.type){
+			case 'r' :
+				cout << "Rock wins!" << endl;
+				break;
+			case 'p' :
+				cout << "Paper wins!" << endl;
+				break;
+			case 's' :
+				cout << "Scissors wins!" << endl;
+				break;
+			default :
+				cout << "Something went wrong" << endl;
+		}
+	}
+}
