@@ -15,47 +15,23 @@ int main(){
 	Paper p(4);
 	Scissors s(5);
 
-	// if-else statement to determine the winner between rock vs scissors
-	if (r.fight(s) == true){
-		cout << "Rock wins!" << endl;
-	}else{
-		cout << "Scissors wins!" << endl;
-	}
+	// Rock vs. Scissors
+	checkWinner(r.fight(s), r, s);
 
-	// if-else statement to determine the winner between rock vs paper
-	if (r.fight(p) == true) {
-		cout << "Rock wins!" << endl;
-	}else{
-		cout << "Paper wins!" << endl;
-	}
+	// Rock vs. Paper
+	checkWinner(r.fight(p), r, p);
 
-	// if-else statement to determine the winner between paper vs rock
-	if (p.fight(r) == true){
-		cout << "Paper wins!" << endl;
-	}else{
-		cout << "Rock wins!" << endl;
-	}
+	// Paper vs. Rock
+	checkWinner(p.fight(r), p, r);
 
-	// if-else statement to determine the winner between paper vs scissors
-	if (p.fight(s) == true) {
-		cout << "Paper wins!" << endl;
-	}else{
-		cout << "Scissors wins!" << endl;
-	}
+	// Paper vs. Scissors
+	checkWinner(p.fight(s), p, s);
 
-	// if-else statement to determine the winner between scissors vs rock
-	if (s.fight(r) == true){
-		cout << "Scissors wins!" << endl;
-	}else{
-		cout << "Rock wins!" << endl;
-	}
+	// Scissors vs. Rock
+	checkWinner(s.fight(r), s, r);
 
-	// if-else statement to determine the winner between scissors vs paper
-	if (s.fight(p) == true){
-		cout << "Scissors wins!" << endl;
-	}else{
-		cout << "Paper wins!" << endl;
-	}
+	// Scissors vs. Paper
+	checkWinner(s.fight(p), s, p);
 
 	return 0;
 }
