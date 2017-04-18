@@ -33,19 +33,19 @@ Scissors::Scissors(){
 
 // Initialized Rock constructor
 Rock::Rock(int r){
-	setStrength(r);
+	strength = r;
 	type = 'r';
 }
 
 // Initialized Paper constructor
 Paper::Paper(int p){
-	setStrength(p);
+	strength = p;
 	type = 'p';
 }
 
 // Initialized Scissors constructor
 Scissors::Scissors(int s){
-	setStrength(s);
+	strength = s;
 	type = 's';
 }
 
