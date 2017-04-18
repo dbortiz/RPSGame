@@ -13,7 +13,10 @@ class Tool{
 		char type;		
 	public:
 		Tool();
+		int getStrength();
 		void setStrength(int);
+		char getType();
+		void setType(char);
 };
 
 // Rock class with constructors and fight method
