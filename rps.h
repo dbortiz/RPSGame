@@ -8,9 +8,10 @@ using namespace std;
 
 // Tool class with variables, constructor, and setStrength method
 class Tool{
-	public:
+	protected:
 		int strength;
-		char type;
+		char type;		
+	public:
 		Tool();
 		void setStrength(int);
 };
