@@ -107,9 +107,24 @@ bool Scissors::fight(Tool opponent){
 	
 }
 
-// Initialized setStrength method in Tool class
+// Returns Tool strength
+int Tool::getStrength(){
+	return strength;
+}
+
+// Initializes strength to new strength (s)
 void Tool::setStrength(int s){
 	strength = s;
+}
+
+// Returns Tool type
+char Tool::getType(){
+	return type;
+}
+
+// Initializes type to new type (t)
+void Tool::setType(char t){
+	type = t;
 }
 
 // Function to check who won between two objects (Rock, Paper, or Scissors)
