@@ -4,8 +4,8 @@
 using namespace std;
 // Initialized default Tool constructor
 Tool::Tool(){
-	int strength = 1;
-	char type = 's';
+	strength = 1;
+	type = 's';
 }
 
 Tool::Tool(int newStrength, char newType){
