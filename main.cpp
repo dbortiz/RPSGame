@@ -15,6 +15,10 @@ int main(){
 	Paper p(4);
 	Scissors s(5);
 
+	r.setStrength(1);
+	cout << r.getStrength() << endl;
+	cout << r.fight(s) << endl;
+/*
 	// Rock vs. Scissors
 	checkWinner(r.fight(s), r, s);
 
@@ -32,6 +36,6 @@ int main(){
 
 	// Scissors vs. Paper
 	checkWinner(s.fight(p), s, p);
-
+*/
 	return 0;
 }
