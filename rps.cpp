@@ -52,17 +52,17 @@ Scissors::Scissors(int s){
 
 // Initialized fight method for Rock class
 bool Rock::fight(Tool opponent){
-	if (opponent.type == 's'){
+	if (opponent.getType() == 's'){
 		strength *= 2;
 	}
-	else if (opponent.type == 'p'){
+	else if (opponent.getType() == 'p'){
 		strength *= 0.5;
 	}
 	else{
 		strength;
 	}
 
-	if (strength > opponent.strength){
+	if (strength > opponent.getStrength()){
 		return true;
 	}else{
 		return false;
@@ -71,17 +71,17 @@ bool Rock::fight(Tool opponent){
 
 // Initialized fight method for Paper class
 bool Paper::fight(Tool opponent){
-	if (opponent.type == 'r'){
+	if (opponent.getType() == 'r'){
 		strength *= 2;
 	}
-	else if (opponent.type == 's'){
+	else if (opponent.getType() == 's'){
 		strength *= 0.5;
 	}
 	else{
 		strength;
 	}
 
-	if (strength > opponent.strength){
+	if (strength > opponent.getStrength()){
 		return true;
 	}else{
 		return false;
@@ -89,17 +89,17 @@ bool Paper::fight(Tool opponent){
 }
 // Initialized fight method for Scissors class
 bool Scissors::fight(Tool opponent){
-	if (opponent.type == 's'){
+	if (opponent.getType() == 's'){
 		strength *= 2;
 	}
-	else if (opponent.type == 'r'){
+	else if (opponent.getType() == 'r'){
 		strength *= 0.5;
 	}
 	else{
 		strength;
 	}
 
-	if(strength > opponent.strength){
+	if(strength > opponent.getStrength()){
 		return true;
 	}else{
 		return false;
