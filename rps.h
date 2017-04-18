@@ -13,6 +13,7 @@ class Tool{
 		char type;		
 	public:
 		Tool();
+		Tool(int, char);
 		int getStrength();
 		void setStrength(int);
 		char getType();
