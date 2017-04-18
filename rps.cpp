@@ -130,7 +130,7 @@ void Tool::setType(char t){
 // Function to check who won between two objects (Rock, Paper, or Scissors)
 void checkWinner(bool win, Tool a, Tool b){
 	if (win == true){
-		switch (a.type){
+		switch (a.getType()){
 			case 'r' :
 				cout << "Rock wins!" << endl;
 				break;
@@ -144,7 +144,7 @@ void checkWinner(bool win, Tool a, Tool b){
 				cout << "Something went wrong" << endl;
 		}
 	}else{
-		switch (b.type){
+		switch (b.getType()){
 			case 'r' :
 				cout << "Rock wins!" << endl;
 				break;
