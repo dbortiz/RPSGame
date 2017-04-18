@@ -8,6 +8,11 @@ Tool::Tool(){
 	char type = 's';
 }
 
+Tool::Tool(int newStrength, char newType){
+	strength = newStrength;
+	type = newType;
+}
+
 // Initialized default Rock constructor
 Rock::Rock(){
 	strength = 1;
